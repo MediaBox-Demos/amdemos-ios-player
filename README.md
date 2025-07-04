@@ -1,57 +1,19 @@
-# amdemos-ios-player
-阿里视频云播放器SDK示例代码
+# **🚚 仓库迁移声明**
 
-## **短剧Demo源码公告**
-该版本为 2024年10月前发布的旧版本短剧场景Demo源码，阿里云已于2025年2月正式发布最新版「微短剧场景化多实例Demo」，并包含完整源码。新版Demo相比旧版本，集成易用性更高，播放体验更加丝滑，在播放性能和体验上达到了最佳平衡。
+感谢大家对本项目的支持！
 
-当前目录下的旧版短剧场景Demo源码已不再更新维护，若需获取最新版「微短剧场景化多实例Demo」，请先购买播放器专业版License，并提工单联系我们获取Demo源码，详见：
+**⚠️ 本仓库已下线，所有播放器相关代码和 Demo 已合并至播放器示例工程（即三合一仓库）。原有各模块独立仓库将不再单独维护。**
 
-[集成最新「微短剧场景化多实例Demo」](https://help.aliyun.com/zh/vod/use-cases/micro-drama-integration-ios-player-sdk?spm=a2c4g.11186623.help-menu-29932.d_3_0_0_1_1.6afd523cYfdJM7)
+阿里云播放器示例工程提供了完整的 SDK 集成示例、API 使用示例和功能演示 Demo，帮助开发者快速集成和使用阿里云播放器。
 
-[播放器SDK专业版License获取](https://help.aliyun.com/zh/vod/developer-reference/obtain-the-player-sdk-license?spm=a2c4g.11186623.help-menu-search-29932.d_15)
+请前往**播放器示例工程**获取最新内容和支持：
 
-## 代码结构
-```
-├── 根目录                                 // Demo根目录
-│   ├── AUIPlayerMain                     // Demo壳组件代码，将其他功能组件UI以列表的形式展示
-│   ├── AUIVideoFlow                      // 信息流播放、全屏播放组件代码
-│   ├── AUIVideoList                      // 沉浸式短视频组件代码
-│   ├── AUIShortEpisode                   // 短剧UI组件代码
-│   ├── AUIPlayer.podspec                 // 本地pod文件
-│   ├── Example                           // 示例代码工程
-│   ├── README.md                         // Readme   
+ 👉 [AliPlayer-iOS](https://github.com/MediaBox-Demos/AliPlayer-iOS)
 
-```
+### ⚠️ 注意事项
 
-## 环境要求
-- Xcode 12.0 及以上版本，推荐使用最新正式版本
-- CocoaPods 1.9.3 及以上版本
-- 准备 iOS 10.0 及以上版本的真机
+- 本仓库不再维护或更新。
+- 所有新需求、反馈或 Issue，请在播放器示例工程仓库提交。
 
-## 前提条件
-获取播放器SDK的License和key，需要包含播放的授权。
-参考[获取License](https://help.aliyun.com/zh/vod/developer-reference/license-authorization-and-management)
-
-## 跑通Example Demo
-
-1. 源码下载后，解压进入目录AlivcPlayerDemo
-2. 修改Podfile中依赖的播放器SDK为最新版本，版本号参考[iOS播放器SDK](https://help.aliyun.com/zh/vod/developer-reference/release-notes-for-apsaravideo-player-sdk-for-ios)
-3. 在Example目录下执行“pod install  --repo-update”，自动安装依赖SDK
-4. 打开工程文件“AlivcPlayerDemo.xcworkspace”，修改包Id
-5. 在控制台上申请试用License，获取License文件和LicenseKey，如果已有直接进入下一步
-6. 把License文件放到AlivcPlayerDemo/目录下，并修改文件名为“license.crt”
-7. 把“LicenseKey”（如果没有，请在控制台拷贝），打开“AlivcPlayerDemo/Info.plist”，填写到字段“AlivcLicenseKey”的值中
-8. 在真机上编译运行
-
-
-
-## 其他
-
-* [播放器SDK](https://help.aliyun.com/zh/vod/developer-reference/apsaravideo-player-sdk/)
-* [SDK快速集成](https://help.aliyun.com/zh/vod/developer-reference/quick-integration-1)
-* [API说明](https://help.aliyun.com/zh/vod/developer-reference/api-references-ios-player)
-* [播放器常见问题](https://help.aliyun.com/zh/vod/support/faq-about-apsaravideo-player/)
-* [播放器单点追查](https://help.aliyun.com/zh/vod/user-guide/single-point-tracing)
-
-如果您在使用播放器SDK有任何问题或建议，欢迎通过钉钉搜索群号31882553加入阿里云播放器SDK开发者群。
+感谢理解与支持！
 
